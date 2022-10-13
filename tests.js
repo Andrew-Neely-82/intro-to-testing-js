@@ -69,10 +69,39 @@ describe('isFive', function() {
     });
 });
 
+describe(`isEven`, function () {
+    it('should be defined as a function', function () {
+        expect(typeof isEven).toBe('function')
+    });
+    it('should return a boolean no matter the input', function () {
+        expect(isEven()).toBe(false)
+    });
+    it('should return true when passed 2', function () {
+        expect(isEven(2)).toBe(true)
+    });
+    it('returns true when executed with -4', function () {
+        expect(isEven(-4)).toBe(true)
+    });
+    it('returns false when executed with 3', function () {
+        expect(isEven(3)).toBe(false)
+    });
+    it('returns false when called with "banana"', function () {
+        expect(isEven("banana")).toBe(false)
+    });
+    it('returns true when called with "8"', function () {
+        expect(isEven("8")).toBe(true)
+    });
+    it('returns false when called with Infinity', function () {
+        expect(isEven(Infinity)).toBe(false)
+    });
+    it('return false when called with a boolean input like true', function () {
+        expect(isEven(true)).toBe(false)
+    });
+    it('return false when called with a boolean input like false', function () {
+        expect(isEven(false)).toBe(false)
+    });
+    it('returns false when called without an argument', function () {
+        expect(isEven()).toBe(false)
 
-// What about if we pass in the string "5"? Do you want isFive to return true for that?
-// If so, write the test, ensure that the test is failing, and then write the implementation
-
-
-
-
+    });
+})

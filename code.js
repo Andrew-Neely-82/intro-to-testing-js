@@ -14,7 +14,7 @@ function sayHello(x) {
     }
 }
 
-// TODO NOT DONE!
+// TODO DONE!
 
 function isFive(x) {
     if (x === 5) {
@@ -25,22 +25,35 @@ function isFive(x) {
     }
 }
 
-//  Inside of tests.js, write a describe block for our new isFive function.
-//  As your first, failing test, write an it and an expect asserting that a function named isFive exists.
-//  Run the tests by refreshing report.html to show the red, failing test.
-//  Write just enough code inside of code.js to define an empty function for isFive.
-//  Now, refresh report.html to ensure that all tests are green.
-//  What other tests and implementation cycles should you do for isFive?
-//  Ensure that isFive returns a boolean no matter what the input
-//  Ensure that isFive returns true when passed 5
-//  What about if we pass in the string "5"? Do you want isFive to return true for that?
-//  If so, write the test, ensure that the test is failing, and then write the implementation
-//  Commit your work to git and push to GitHub before moving forward.
+// TODO DONE!
 
-
-
-
-// TODO NOT DONE!
-function sayGoodbye() {
+function isEven(x) {
+    if (typeof x === "boolean") {
+        return false
+    }
+    return x % 2 === 0;
 }
 
+// TODO NOT DONE!
+function isVowel() {
+
+}
+
+//  Start with the smallest tests first.
+//  Write just enough code to green the test
+//  Build up functionality one small piece at a time.
+//  Commit your work to git at each step.
+// TODO Write each assertion, confirm the test fails, write only enough code to green that specific test, refactor, then repeat.
+// TODO Remember to add and then "green" one test at a time. That's part of the fundamental approach of TDD.
+// TODO Assert that:
+// TODO isVowel always returns a boolean
+// TODO isVowel("a") returns true
+// TODO isVowel("A") returns true
+// TODO isVowel("y") returns false
+// TODO isVowel(4) returns false
+// TODO isVowel(true) or isVowel(false) both return false
+// TODO isVowel("banana") returns false
+// TODO isVowel() returns false
+// TODO Refactor when appropriate and possible.
+// TODO Repeat until the tests are robust and the function works as intended.
+// TODO Commit your work to git and push to GitHub before moving forward.
