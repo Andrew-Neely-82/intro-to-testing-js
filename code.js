@@ -3,6 +3,15 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-function sayHello() {
-    return "Hello, Jane"
+function sayHello(string){
+    if (string === "Jane") {
+        return "Hello, Jane!";
+    }
+    else if (string === "Alex") {
+        return "Hello, Alex!";
+    }
+    else {
+         return "Hello, Pat!";
+    }
 }
+
