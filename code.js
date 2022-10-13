@@ -18,10 +18,7 @@ function sayHello(x) {
     else if (x === "Pat") {
         return helloPat
     }
-    else if (x === "World") {
-        return helloWorld
-    }
-    else if (x === true) {
+    else if (typeof x === "boolean" || x === "World") {
         return helloWorld
     }
 }
