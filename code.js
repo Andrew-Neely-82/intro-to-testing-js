@@ -3,15 +3,21 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-function sayHello(string){
-    if (string === "Jane") {
-        return "Hello, Jane!";
+function sayHello(x) {
+    let hello = "Hello, "
+
+    if (x === "Jane") {
+        return hello + "Jane!"
     }
-    else if (string === "Alex") {
-        return "Hello, Alex!";
+    else if (x === "Alex") {
+        return hello + "Alex!"
     }
-    else {
-         return "Hello, Pat!";
+    else if (x === "Pat") {
+        return hello + "Pat!"
+    }
+    else if (x === "World") {
+        return hello + "World!"
     }
 }
+
 

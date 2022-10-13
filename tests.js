@@ -29,7 +29,10 @@ describe('sayHello', function() {
         expect(sayHello("Alex")).toBe('Hello, Alex!');
     });
     it("should return 'Hello, Pat!'", function () {
-        expect(sayHello("")).toBe('Hello, Pat!');
+        expect(sayHello("Pat")).toBe('Hello, Pat!');
+    });
+    it('should return "Hello, World!', function () {
+        expect(sayHello("World")).toBe("Hello, World!")
     });
 })
 
