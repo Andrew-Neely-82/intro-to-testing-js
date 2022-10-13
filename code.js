@@ -4,19 +4,25 @@ const helloWorld = function() {
 }
 
 function sayHello(x) {
-    let hello = "Hello, "
+    let helloJane = "Hello, Jane!"
+    let helloAlex = "Hello, Alex!"
+    let helloPat = "Hello, Pat!"
+    let helloWorld = "Hello, World!"
 
     if (x === "Jane") {
-        return hello + "Jane!"
+        return helloJane
     }
     else if (x === "Alex") {
-        return hello + "Alex!"
+        return helloAlex
     }
     else if (x === "Pat") {
-        return hello + "Pat!"
+        return helloPat
     }
     else if (x === "World") {
-        return hello + "World!"
+        return helloWorld
+    }
+    else if (x === true) {
+        return helloWorld
     }
 }
 
