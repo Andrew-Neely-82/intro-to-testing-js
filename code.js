@@ -35,25 +35,34 @@ function isEven(x) {
 }
 
 // TODO NOT DONE!
-function isVowel() {
-
+function isVowel(x) {
+    return x === "a" ||
+        x === "e" ||
+        x === "i" ||
+        x === "o" ||
+        x === "u" ||
+        x === "A" ||
+        x === "E" ||
+        x === "I" ||
+        x === "O" ||
+        x === "U";
 }
 
-//  Start with the smallest tests first.
-//  Write just enough code to green the test
-//  Build up functionality one small piece at a time.
-//  Commit your work to git at each step.
-// TODO Write each assertion, confirm the test fails, write only enough code to green that specific test, refactor, then repeat.
-// TODO Remember to add and then "green" one test at a time. That's part of the fundamental approach of TDD.
-// TODO Assert that:
-// TODO isVowel always returns a boolean
-// TODO isVowel("a") returns true
-// TODO isVowel("A") returns true
-// TODO isVowel("y") returns false
-// TODO isVowel(4) returns false
-// TODO isVowel(true) or isVowel(false) both return false
-// TODO isVowel("banana") returns false
-// TODO isVowel() returns false
-// TODO Refactor when appropriate and possible.
-// TODO Repeat until the tests are robust and the function works as intended.
-// TODO Commit your work to git and push to GitHub before moving forward.
+function add(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return NaN
+    }
+    else {
+        return parseFloat(a) + parseFloat(b)
+    }
+}
+
+
+// Assert that add:
+// add(2, 3) returns 5
+// add(-3, -9) returns -12
+// add("5", 6) returns 11
+// add("-4", "10") returns 6
+// TODO add("banana", "split") returns NaN
+// TODO add(2, "apples") returns NaN
+// TODO add() returns NaN
